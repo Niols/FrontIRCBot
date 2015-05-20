@@ -6,22 +6,22 @@ class ColorCode:
     IRC colors codes, as ints.
     For simple use, you should use Color object.
     """
-    White      =  0
-    Black      =  1
-    DarkBlue   =  2
-    DarkGreen  =  3
-    Red        =  4
-    Brown      =  5
-    Purple     =  6
-    Orange     =  7
-    Yellow     =  8
-    LightGreen =  9
-    Cyan       = 10
-    LightCyan  = 11
-    Blue       = 12
-    Pink       = 13
-    Gray       = 14
-    LightGray  = 15
+    White     =  0
+    Black     =  1
+    DarkBlue  =  2
+    DarkGreen =  3
+    Red       =  4
+    Brown     =  5
+    Purple    =  6
+    Orange    =  7
+    Yellow    =  8
+    Green     =  9
+    Cyan      = 10
+    LightCyan = 11
+    Blue      = 12
+    Pink      = 13
+    Gray      = 14
+    LightGray = 15
 
 class ControlCode:
     """
@@ -50,7 +50,7 @@ class _Color:
 "IRC color codes, as strings."
 Color = _Color()
 
-class _Code:
+class _Control:
     def __dir__(self):
         return [a for a in dir(ControlCode) if a[0] != '_']
 
