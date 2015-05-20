@@ -3,7 +3,13 @@
 
 from __future__ import unicode_literals
 
-import defaults as DEFAULT
+import sys
+
+IS_PY2 = sys.version[0] == '2'
+if IS_PY2:
+    import defaults as DEFAULT
+else:
+    import frontircbot.defaults as DEFAULT
 
 
 

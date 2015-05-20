@@ -7,14 +7,15 @@ import sys
 import irc.client
 import threading
 
-import defaults as DEFAULT
-import utils
-
 IS_PY2 = sys.version[0] == '2'
 if IS_PY2:
     import Queue as queue
+    import utils
+    import defaults as DEFAULT
 else:
     import queue
+    import frontircbot.utils
+    import frontircbot.defaults as DEFAULT
 
 
 
