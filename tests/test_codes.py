@@ -1,4 +1,11 @@
-from frontircbot.codes import ColorCode, ControlCode, Color, Control
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+from __future__ import unicode_literals
+
+from frontircbot.codes import *
+
+
 
 def dir_attr(c):
     return [a for a in dir(c) if a[0] != '_']
